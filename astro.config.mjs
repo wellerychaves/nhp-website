@@ -15,5 +15,4 @@ export default defineConfig({
 
 	integrations: [react()],
 	adapter: cloudflare(),
-	output: "server",
 });
