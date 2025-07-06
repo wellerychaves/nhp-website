@@ -1,0 +1,32 @@
+{
+	"name": "nhp-website",
+	"private": true,
+	"version": "0.0.1",
+	"type": "module",
+	"scripts": {
+		"dev": "bunx --bun vite",
+		"build": "bunx --bun vite build",
+		"lint": "bunx biome check --write .",
+		"preview": "bunx --bun vite preview"
+	},
+	"dependencies": {
+		"@tailwindcss/vite": "^4.1.11",
+		"@tanstack/react-query": "^5.81.5",
+		"@tanstack/react-router": "^1.125.3",
+		"@tanstack/react-router-devtools": "^1.125.3",
+		"axios": "^1.10.0",
+		"react": "^19.1.0",
+		"react-dom": "^19.1.0",
+		"tailwindcss": "^4.1.11"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "2.0.6",
+		"@tanstack/router-plugin": "^1.125.3",
+		"@types/bun": "1.2.18",
+		"@types/react": "^19.1.8",
+		"@types/react-dom": "^19.1.6",
+		"@vitejs/plugin-react-swc": "^3.10.2",
+		"typescript": "~5.8.3",
+		"vite": "^7.0.2"
+	}
+}
