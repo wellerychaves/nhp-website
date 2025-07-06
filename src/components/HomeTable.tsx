@@ -7,7 +7,7 @@ const HomeTable = () => {
 		queryKey: ["teams"],
 		queryFn: () => fetch(`${backendUrl}/teams`).then((res) => res.json()),
 	});
-	console.log({backendUrl})
+
 	const teams: Team[] = data?.teams || [];
 	const hasTeams = teams.length > 0;
 
