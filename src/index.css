@@ -1,0 +1,113 @@
+@import "tailwindcss";
+
+:root {
+	--page-background: #020617;
+	--page-text-color: #f8fafc;
+	font-synthesis: none;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+@font-face {
+	font-family: "Montserrat";
+	src: url("/fonts/Montserrat-Regular.woff2") format("woff");
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Montserrat";
+	src: url("/fonts/Montserrat-Bold.woff2") format("woff");
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Atkinson";
+	src: url("/fonts/atkinson-regular.woff") format("woff");
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Atkinson";
+	src: url("/fonts/atkinson-bold.woff") format("woff");
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+}
+
+header {
+	font-family: "Montserrat", sans-serif;
+}
+
+body {
+	background-color: var(--page-background);
+	color: var(--page-text-color);
+	height: 100vh;
+}
+
+button {
+	cursor: pointer;
+	user-select: none;
+	border: 1px solid white;
+	padding: 0.5rem;
+}
+
+main {
+	width: 100%;
+	max-width: 342px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 1rem;
+	box-sizing: border-box;
+	font-family: "Atkinson";
+}
+
+@media only screen and (min-width: 768px) {
+	main {
+		max-width: 720px;
+	}
+}
+
+@media only screen and (min-width: 1440px) {
+	main {
+		max-width: 1248px;
+	}
+}
+
+/* width */
+::-webkit-scrollbar {
+	width: 6px;
+	border-radius: 100px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	background: #f1f1f100;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: #888;
+	border-radius: 100px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	background: #555;
+}
+
+.scheduleDiv {
+	overflow-y: scroll; /* Permite scroll vertical */
+	-ms-overflow-style: none; /* Esconde a barra de rolagem no IE e Edge */
+	scrollbar-width: none; /* Esconde a barra de rolagem no Firefox */
+}
+
+.scheduleDiv::-webkit-scrollbar {
+	display: hidden;
+}
